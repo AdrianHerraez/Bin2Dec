@@ -35,8 +35,11 @@ input {
     height: 6vh;
 }
 
-.botones {
-    width: 48%;
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
 }
 
 #si {

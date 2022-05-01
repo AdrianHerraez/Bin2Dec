@@ -4,26 +4,25 @@ function cambio() {
     var si = document.getElementById('si')
     var no = document.getElementById('no')
     var resultado = document.getElementById('resultado')
-    var boton = document.getElementById('boton').value
+    var boton = document.getElementById('boton')
+    var texto = document.getElementById('texto')
 
     num.value = ""
     nums.value = ""
-    resultado.innerHTML = ""
-    si.innerHTML = ""
+    resultado.innerHTML = "0"
+    si.innerHTML = "<br>"
     no.innerHTML = ""
 
-    if (boton.innerHTML == 'BINARIO') {
-        num.style.display = "block";
-        nums.style.display = "none";
+    if (boton.textContent == 'BINARIO') {
+        num.style.display = "block"
+        nums.style.display = "none"
+        boton.textContent = "HEXADECIMAL"
+        texto.innerHTML = "Enter a binary number, get a decimal conversion"
     } else {
-        num.style.display = "none";
-        nums.style.display = "block";
-    }
-
-    if (boton.innerHTML == 'BINARIO') {
-        boton.innerHTML = 'HEXADECIMAL';
-    } else {
-        boton.innerHTML = 'BINARIO';
+        num.style.display = "none"
+        nums.style.display = "block"
+        boton.textContent = "BINARIO"
+        texto.innerHTML = "Enter a hexadecimal number, get a decimal conversion"
     }
 }
 
