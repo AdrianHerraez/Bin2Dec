@@ -52,6 +52,10 @@ button {
     color: red;
 }
 
+#resultado {
+    font-size: 25px;
+}
+
 footer {
     color: white;
     text-align: center;
